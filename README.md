@@ -1,4 +1,4 @@
-# Amikom One (Patched & Reverse Engineering Project)
+# Amikom One Mod
 
 [![Platform](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com)
 [![Tools](https://img.shields.io/badge/Decompiled%20with-Apktool-blue.svg)](https://apktool.org/)
