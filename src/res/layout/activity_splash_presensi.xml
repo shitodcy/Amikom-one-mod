@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_splash_presensi" android:background="@color/putih" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/imgStatus" android:layout_width="200.0dp" android:layout_height="200.0dp" android:layout_margin="20.0dp" android:src="@drawable/success500" />
+        <TextView android:textSize="20.0sp" android:id="@id/txtCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/presensi_berhasil" android:layout_centerInParent="true" />
+        <TextView android:textSize="15.0sp" android:id="@id/txtSelamat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selamat_mengikuti_perkuliahan" android:layout_centerInParent="true" />
+    </LinearLayout>
+    <ImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginBottom="30.0dp" android:src="@null" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

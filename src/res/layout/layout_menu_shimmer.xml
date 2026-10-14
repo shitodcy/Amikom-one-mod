@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="4.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.elyeproj.loaderviewlibrary.LoaderImageView android:layout_width="62.0dp" android:layout_height="62.0dp" app:corners="16" app:use_gradient="true" />
+            <com.elyeproj.loaderviewlibrary.LoaderTextView android:layout_width="68.0dp" android:layout_height="12.0dp" android:layout_marginTop="8.0dp" app:corners="6" app:use_gradient="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.elyeproj.loaderviewlibrary.LoaderImageView android:layout_width="62.0dp" android:layout_height="62.0dp" app:corners="16" app:use_gradient="true" />
+            <com.elyeproj.loaderviewlibrary.LoaderTextView android:layout_width="68.0dp" android:layout_height="12.0dp" android:layout_marginTop="8.0dp" app:corners="6" app:use_gradient="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.elyeproj.loaderviewlibrary.LoaderImageView android:layout_width="62.0dp" android:layout_height="62.0dp" app:corners="16" app:use_gradient="true" />
+            <com.elyeproj.loaderviewlibrary.LoaderTextView android:layout_width="68.0dp" android:layout_height="12.0dp" android:layout_marginTop="8.0dp" app:corners="6" app:use_gradient="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.elyeproj.loaderviewlibrary.LoaderImageView android:layout_width="62.0dp" android:layout_height="62.0dp" app:corners="16" app:use_gradient="true" />
+            <com.elyeproj.loaderviewlibrary.LoaderTextView android:layout_width="68.0dp" android:layout_height="12.0dp" android:layout_marginTop="8.0dp" app:corners="6" app:use_gradient="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.elyeproj.loaderviewlibrary.LoaderImageView android:layout_width="62.0dp" android:layout_height="62.0dp" app:corners="16" app:use_gradient="true" />
+            <com.elyeproj.loaderviewlibrary.LoaderTextView android:layout_width="68.0dp" android:layout_height="12.0dp" android:layout_marginTop="8.0dp" app:corners="6" app:use_gradient="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.elyeproj.loaderviewlibrary.LoaderImageView android:layout_width="62.0dp" android:layout_height="62.0dp" app:corners="16" app:use_gradient="true" />
+            <com.elyeproj.loaderviewlibrary.LoaderTextView android:layout_width="68.0dp" android:layout_height="12.0dp" android:layout_marginTop="8.0dp" app:corners="6" app:use_gradient="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.elyeproj.loaderviewlibrary.LoaderImageView android:layout_width="62.0dp" android:layout_height="62.0dp" app:corners="16" app:use_gradient="true" />
+            <com.elyeproj.loaderviewlibrary.LoaderTextView android:layout_width="68.0dp" android:layout_height="12.0dp" android:layout_marginTop="8.0dp" app:corners="6" app:use_gradient="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.elyeproj.loaderviewlibrary.LoaderImageView android:layout_width="62.0dp" android:layout_height="62.0dp" app:corners="16" app:use_gradient="true" />
+            <com.elyeproj.loaderviewlibrary.LoaderTextView android:layout_width="68.0dp" android:layout_height="12.0dp" android:layout_marginTop="8.0dp" app:corners="6" app:use_gradient="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.elyeproj.loaderviewlibrary.LoaderImageView android:layout_width="62.0dp" android:layout_height="62.0dp" app:corners="16" app:use_gradient="true" />
+            <com.elyeproj.loaderviewlibrary.LoaderTextView android:layout_width="68.0dp" android:layout_height="12.0dp" android:layout_marginTop="8.0dp" app:corners="6" app:use_gradient="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

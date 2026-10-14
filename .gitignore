@@ -1,0 +1,16 @@
+# Build outputs
+*.apk
+!splits/*.apk
+*.idsig
+
+# Intermediate apktool build folders
+src/build/
+build/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+*.log

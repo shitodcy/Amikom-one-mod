@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" style="@style/Widget.Support.CoordinatorLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/nested_scroll" android:paddingBottom="@dimen/padding_10" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/content_detail_catalog" layout="@layout/content_detail_catalog" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

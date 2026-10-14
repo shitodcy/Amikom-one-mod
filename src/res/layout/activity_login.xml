@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_login" android:background="@color/putih" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="154.0dp" android:layout_height="52.0dp" android:layout_marginBottom="50.0dp" android:src="@drawable/amikomtext" android:layout_above="@id/layoutTv" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:layout_above="@id/layoutForm">
+        <TextView android:textSize="@dimen/judul" android:textColor="@color/hitam" android:id="@id/text_selamat_datang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selamat_datang_login" />
+        <TextView android:id="@id/text_silahkan_masuk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/silahkan_masuk_login" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutForm" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:layout_centerInParent="true">
+        <EditText android:id="@id/etNpm" android:background="@drawable/edit_text_login" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:hint="@string/nomor_induk_mahasiswa" android:inputType="text" />
+        <EditText android:id="@id/etPassword" android:background="@drawable/edit_text_login" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:hint="@string/password" android:inputType="textPassword" />
+        <RelativeLayout android:background="@drawable/custom_button_login" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp">
+            <Button android:textColor="@color/putih" android:id="@id/btLogin" android:background="@drawable/custom_button_login" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/masuk" />
+            <ProgressBar android:id="@id/progressbar_login" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:layout_centerInParent="true" android:indeterminateTint="@color/putih" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutItemAddTicket" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:layout_weight="1.0">
+        <TextView android:textColor="@color/hitam" android:id="@id/tvNamaItemTicket" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textStyle="bold" android:id="@id/tvStatusItemTicket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aktif" />
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="120.0dp" android:layout_height="wrap_content" android:hint="@string/rp" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/etItemTicket" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox android:id="@id/checkItemTicket" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

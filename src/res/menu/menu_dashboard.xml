@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_home" android:enabled="true" android:id="@id/btDashboard" android:title="@string/beranda" />
+    <item android:icon="@drawable/code" android:enabled="true" android:id="@id/btCode" android:title="@string/kode" />
+    <item android:id="@id/placeholder" android:title="" />
+    <item android:icon="@drawable/ic_attendance" android:enabled="true" android:id="@id/btPresence" android:title="@string/dashboard_presensi" />
+    <item android:icon="@drawable/ic_profile" android:enabled="true" android:id="@id/btProfile" android:title="@string/profil" />
+</menu>

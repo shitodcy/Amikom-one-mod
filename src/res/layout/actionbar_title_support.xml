@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_back_support" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back_black" android:contentDescription="@string/tombol_kembali_ke_dashboard" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textColor="@color/black" android:id="@id/tv_custom_actionbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bantuan" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

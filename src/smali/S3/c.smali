@@ -1,0 +1,226 @@
+.class public LS3/c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/smarteist/autoimageslider/c$l;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Landroid/view/View;F)V
+    .locals 5
+
+    .line 1
+    const v0, 0x469c4000    # 20000.0f
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1, v0}, Landroid/view/View;->setCameraDistance(F)V
+
+    .line 5
+    .line 6
+    .line 7
+    const/high16 v0, -0x40800000    # -1.0f
+
+    .line 8
+    .line 9
+    cmpg-float v0, p2, v0
+
+    .line 10
+    .line 11
+    const/4 v1, 0x0
+
+    .line 12
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    .line 13
+    .line 14
+    if-gez v0, :cond_1
+
+    .line 15
+    .line 16
+    :cond_0
+    invoke-virtual {p1, v1}, Landroid/view/View;->setAlpha(F)V
+
+    .line 17
+    .line 18
+    .line 19
+    goto :goto_1
+
+    .line 20
+    :cond_1
+    cmpg-float v0, p2, v1
+
+    .line 21
+    .line 22
+    if-gtz v0, :cond_2
+
+    .line 23
+    .line 24
+    invoke-virtual {p1, v2}, Landroid/view/View;->setAlpha(F)V
+
+    .line 25
+    .line 26
+    .line 27
+    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v0
+
+    .line 31
+    int-to-float v0, v0
+
+    .line 32
+    invoke-virtual {p1, v0}, Landroid/view/View;->setPivotX(F)V
+
+    .line 33
+    .line 34
+    .line 35
+    const/high16 v0, 0x42b40000    # 90.0f
+
+    .line 36
+    .line 37
+    :goto_0
+    invoke-static {p2}, Ljava/lang/Math;->abs(F)F
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v1
+
+    .line 41
+    mul-float/2addr v1, v0
+
+    .line 42
+    invoke-virtual {p1, v1}, Landroid/view/View;->setRotationY(F)V
+
+    .line 43
+    .line 44
+    .line 45
+    goto :goto_1
+
+    .line 46
+    :cond_2
+    cmpg-float v0, p2, v2
+
+    .line 47
+    .line 48
+    if-gtz v0, :cond_0
+
+    .line 49
+    .line 50
+    invoke-virtual {p1, v2}, Landroid/view/View;->setAlpha(F)V
+
+    .line 51
+    .line 52
+    .line 53
+    invoke-virtual {p1, v1}, Landroid/view/View;->setPivotX(F)V
+
+    .line 54
+    .line 55
+    .line 56
+    const/high16 v0, -0x3d4c0000    # -90.0f
+
+    .line 57
+    .line 58
+    goto :goto_0
+
+    .line 59
+    :goto_1
+    invoke-static {p2}, Ljava/lang/Math;->abs(F)F
+
+    .line 60
+    .line 61
+    .line 62
+    move-result v0
+
+    .line 63
+    float-to-double v0, v0
+
+    .line 64
+    const-wide/high16 v3, 0x3fe0000000000000L    # 0.5
+
+    .line 65
+    .line 66
+    cmpg-double v0, v0, v3
+
+    .line 67
+    .line 68
+    const v1, 0x3ecccccd    # 0.4f
+
+    .line 69
+    .line 70
+    .line 71
+    if-gtz v0, :cond_3
+
+    .line 72
+    .line 73
+    :goto_2
+    invoke-static {p2}, Ljava/lang/Math;->abs(F)F
+
+    .line 74
+    .line 75
+    .line 76
+    move-result p2
+
+    .line 77
+    sub-float/2addr v2, p2
+
+    .line 78
+    invoke-static {v1, v2}, Ljava/lang/Math;->max(FF)F
+
+    .line 79
+    .line 80
+    .line 81
+    move-result p2
+
+    .line 82
+    invoke-virtual {p1, p2}, Landroid/view/View;->setScaleY(F)V
+
+    .line 83
+    .line 84
+    .line 85
+    goto :goto_3
+
+    .line 86
+    :cond_3
+    invoke-static {p2}, Ljava/lang/Math;->abs(F)F
+
+    .line 87
+    .line 88
+    .line 89
+    move-result v0
+
+    .line 90
+    cmpg-float v0, v0, v2
+
+    .line 91
+    .line 92
+    if-gtz v0, :cond_4
+
+    .line 93
+    .line 94
+    goto :goto_2
+
+    .line 95
+    :cond_4
+    :goto_3
+    return-void
+.end method

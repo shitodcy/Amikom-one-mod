@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="24.0sp" android:textStyle="bold" android:id="@id/tv_title_login_option" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="140.0dp" android:text="@string/masuk_sebagai" android:fontFamily="@font/poppins_medium" android:layout_marginStart="32.0dp" android:layout_marginEnd="32.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:id="@id/tv_desc_login_option" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/sebagai_apa_anda_ingin_masuk" android:fontFamily="@font/poppins_regular" app:layout_constraintEnd_toEndOf="@id/tv_title_login_option" app:layout_constraintStart_toStartOf="@id/tv_title_login_option" app:layout_constraintTop_toBottomOf="@id/tv_title_login_option" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="48.0dp" android:clipToPadding="false" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_desc_login_option" app:layout_constraintVertical_bias="0.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="4.0dp" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="36.0dp">
+            <com.google.android.material.card.MaterialCardView android:id="@id/cardView1" android:layout_width="120.0dp" android:layout_height="140.0dp" android:backgroundTint="#fcfcfe" app:cardCornerRadius="16.0dp" app:cardElevation="0.0dp" app:strokeColor="#acaaac" app:strokeWidth="1.0dp">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:text="@string/mahasiswa" android:drawablePadding="@dimen/margin_8" android:fontFamily="@font/poppins_medium" app:drawableTopCompat="@drawable/students" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <Button android:textSize="12.0sp" android:id="@id/btn_students" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/pilih" android:fontFamily="@font/poppins_medium" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="4.0dp" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.google.android.material.card.MaterialCardView android:id="@id/cardView2" android:layout_width="120.0dp" android:layout_height="140.0dp" android:backgroundTint="#fcfcfe" app:cardCornerRadius="16.0dp" app:cardElevation="0.0dp" app:strokeColor="#acaaac" app:strokeWidth="1.0dp">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:text="@string/orang_tua" android:drawablePadding="@dimen/margin_8" android:fontFamily="@font/poppins_medium" app:drawableTopCompat="@drawable/parents" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <Button android:textSize="12.0sp" android:id="@id/btn_parents" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/pilih" android:fontFamily="@font/poppins_medium" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

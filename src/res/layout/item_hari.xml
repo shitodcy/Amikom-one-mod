@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center" android:orientation="vertical" android:id="@id/card_hari" android:layout_width="80.0dp" android:layout_height="50.0dp" android:layout_margin="5.0dp" android:elevation="0.0dp" app:cardCornerRadius="10.0dp" app:cardElevation="0.0dp" app:cardMaxElevation="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layoutSemesterItem" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/abu_abu" android:gravity="center" android:id="@id/tv_hari" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

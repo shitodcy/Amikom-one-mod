@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeDashboard" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_dashboard" android:background="@color/putih" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:id="@id/scroll_dashboard" android:paddingBottom="50.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView android:id="@id/card_dashboard_profil" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" app:cardCornerRadius="10.0dp" app:cardElevation="10.0dp">
+                    <RelativeLayout android:id="@id/layoutProfileDashobard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" android:layout_toStartOf="@id/layout_image_profile" android:layout_alignParentStart="true">
+                            <com.elyeproj.loaderviewlibrary.LoaderTextView android:textStyle="bold" android:textColor="@color/hitam" android:id="@id/tvNamaDashboard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp" app:corners="10" app:use_gradient="true" />
+                            <com.elyeproj.loaderviewlibrary.LoaderTextView android:textSize="@dimen/subjudul" android:id="@id/tvNpmDashboard" android:layout_width="120.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginStart="5.0dp" app:corners="10" app:use_gradient="true" />
+                            <com.elyeproj.loaderviewlibrary.LoaderTextView android:textSize="@dimen/subjudul" android:ellipsize="end" android:gravity="center" android:id="@id/tvStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:fontFamily="@font/poppins_regular" android:layout_marginStart="5.0dp" android:layout_marginEnd="@dimen/padding_16" app:corners="10" app:use_gradient="true" />
+                        </LinearLayout>
+                        <RelativeLayout android:id="@id/layout_image_profile" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                            <com.elyeproj.loaderviewlibrary.LoaderImageView android:id="@id/fotoProfileLoader" android:layout_width="match_parent" android:layout_height="match_parent" app:corners="10" app:use_gradient="true" />
+                            <de.hdodenhof.circleimageview.CircleImageView android:id="@id/fotoProfile" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <TextView android:textSize="@dimen/size_title_dashboard" android:textStyle="bold" android:textColor="@color/hitam" android:id="@id/tvJadwalHariIni" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="@string/jadwal_hari_ini" />
+                <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/merah_material" android:gravity="center_horizontal" android:id="@id/tvPeringatanKosong" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/peringatan_jadwal_kosong" />
+                    <ScrollView android:id="@id/sv_jadwal_hari_ini" android:visibility="gone" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvJadwalHariIniDashboard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never" />
+                    </ScrollView>
+                    <ScrollView android:id="@id/sv_announcement" android:visibility="gone" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_announcement" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingEnd="@dimen/padding_10" />
+                    </ScrollView>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/size_title_dashboard" android:textStyle="bold" android:textColor="@color/hitam" android:id="@id/tvMenu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/menu" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" />
+                <include android:id="@id/layoutMenuShimmer" layout="@layout/layout_menu_shimmer" />
+                <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/rvMenuDashboard" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+                <androidx.cardview.widget.CardView android:id="@id/card_amikom_news" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="-10.0dp" app:cardCornerRadius="20.0dp" app:cardElevation="@dimen/card_elevation">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+                            <TextView android:textSize="@dimen/size_title_dashboard" android:textStyle="bold" android:textColor="@color/hitam" android:id="@id/tvAmikomNews" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/dashboard_amikom_news" android:layout_weight="9.0" />
+                            <TextView android:textSize="@dimen/item" android:gravity="right" android:id="@id/tv_lihat_semua_berita" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lihat Semua" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="200.0dp">
+                            <com.smarteist.autoimageslider.SliderView android:id="@id/imgSlider" android:layout_width="match_parent" android:layout_height="150.0dp" app:sliderAnimationDuration="600" app:sliderAutoCycleDirection="back_and_forth" app:sliderAutoCycleEnabled="true" app:sliderIndicatorAnimationDuration="600" app:sliderIndicatorGravity="center|bottom" app:sliderIndicatorMargin="15.0dp" app:sliderIndicatorOrientation="horizontal" app:sliderIndicatorPadding="3.0dp" app:sliderIndicatorRadius="2.0dp" app:sliderIndicatorSelectedColor="#5a5a5a" app:sliderIndicatorUnselectedColor="#fff" app:sliderScrollTimeInSec="1" app:sliderStartAutoCycle="true" />
+                            <ProgressBar android:id="@id/progressbar_berita" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:indeterminateTint="@color/colorPrimary" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

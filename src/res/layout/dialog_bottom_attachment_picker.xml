@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingTop="12.0dp" android:paddingBottom="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20.0dp" android:paddingEnd="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center_horizontal" android:background="#d1d5db" android:layout_width="40.0dp" android:layout_height="4.0dp" android:layout_marginBottom="16.0dp" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#1f2937" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="Pilih Lampiran" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutTakePhoto" android:background="?selectableItemBackground" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="12.0dp">
+        <FrameLayout android:background="@drawable/bg_circle_purple_light" android:layout_width="44.0dp" android:layout_height="44.0dp">
+            <ImageView android:layout_gravity="center" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_attach_camera" app:tint="#582d82" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="16.0dp">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#111827" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ambil Foto" />
+            <TextView android:textSize="12.0sp" android:textColor="#6b7280" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="Gunakan kamera untuk mengambil foto" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#f3f4f6" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutRecordVideo" android:background="?selectableItemBackground" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="12.0dp">
+        <FrameLayout android:background="@drawable/bg_circle_purple_light" android:layout_width="44.0dp" android:layout_height="44.0dp">
+            <ImageView android:layout_gravity="center" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_attach_video" app:tint="#582d82" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="16.0dp">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#111827" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rekam Video" />
+            <TextView android:textSize="12.0sp" android:textColor="#6b7280" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="Gunakan kamera untuk merekam video" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#f3f4f6" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutChooseFile" android:background="?selectableItemBackground" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="12.0dp">
+        <FrameLayout android:background="@drawable/bg_circle_purple_light" android:layout_width="44.0dp" android:layout_height="44.0dp">
+            <ImageView android:layout_gravity="center" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_attach_file" app:tint="#582d82" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="16.0dp">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#111827" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pilih Dokumen / Galeri" />
+            <TextView android:textSize="12.0sp" android:textColor="#6b7280" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="Pilih dokumen, PDF, gambar, atau berkas" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton android:textColor="#582d82" android:id="@id/btnCancelAttachment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="Batal" app:cornerRadius="8.0dp" app:strokeColor="#582d82" app:strokeWidth="1.0dp" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+</LinearLayout>

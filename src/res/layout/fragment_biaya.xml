@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.tabs.TabLayout android:id="@id/tabLayoutPembayaran" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="6.0dp" app:layout_scrollFlags="scroll|enterAlways" app:tabGravity="fill" app:tabIndicatorColor="@color/ungu_material" app:tabMode="fixed" app:tabSelectedTextColor="@color/ungu_material" style="@style/TabLayoutStyle" />
+        <View android:background="@drawable/shadow" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/vpInfoBiaya" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

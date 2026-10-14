@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/putih" app:cardCornerRadius="16.0dp" app:cardElevation="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/hitam" android:id="@id/tvTitleDialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Konfirmasi Kesesuaian RPS" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/abu_abu" android:id="@id/tvSubtitleDialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
+        <RadioGroup android:id="@id/rgStatusRps" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/hitam" android:id="@id/rbSesuai" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sesuai RPS" android:paddingVertical="8.0dp" />
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/hitam" android:id="@id/rbTidakSesuai" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tidak Sesuai RPS" android:paddingVertical="8.0dp" />
+        </RadioGroup>
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+            <com.google.android.material.button.MaterialButton android:textColor="@color/abu_abu" android:id="@id/btnBatalDialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Batal" android:textAllCaps="false" style="@style/Widget.MaterialComponents.Button.TextButton" />
+            <com.google.android.material.button.MaterialButton android:id="@id/btnSimpanDialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Simpan" android:textAllCaps="false" android:layout_marginStart="8.0dp" android:backgroundTint="@color/colorPrimary" app:cornerRadius="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

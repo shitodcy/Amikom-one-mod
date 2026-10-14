@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/card_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" app:cardCornerRadius="10.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:textColor="@color/hitam" android:id="@id/tv_detail_teori" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:text="@string/warna_ungu_merupakan_teori" />
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:src="@drawable/teori" />
+            <TextView android:textStyle="bold" android:textColor="@color/hitam" android:id="@id/tv_detail_praktikum" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="@string/warna_orange_merupakan_praktikum" />
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:src="@drawable/praktikum" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

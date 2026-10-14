@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layout_login" android:background="@color/putih" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:title="Request Otp" app:titleTextColor="@android:color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/appBarLayout">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="154.0dp" android:layout_height="52.0dp" android:layout_marginBottom="50.0dp" android:src="@drawable/amikomtext" android:layout_above="@id/layoutTv" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:layout_above="@id/layoutForm">
+                <TextView android:textSize="@dimen/judul" android:textColor="@color/hitam" android:id="@id/text_konfirmasi_otp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Verifikasi Data Diri" />
+                <TextView android:id="@id/text_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Silahkan isi sesuai data riil" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutForm" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:layout_centerInParent="true">
+                <EditText android:id="@id/etNpmOTP" android:background="@drawable/edit_text_login" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:hint="@string/nomor_induk_mahasiswa" android:maxLength="10" android:inputType="text" />
+                <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/masukkan_ttl_anda" />
+                <DatePicker android:id="@id/ttlDatePicker" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:spinnersShown="true" android:calendarViewShown="false" android:datePickerMode="spinner" />
+                <RelativeLayout android:background="@drawable/custom_button_login" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp">
+                    <Button android:textColor="@color/putih" android:id="@id/btFormVerifikasi" android:background="@drawable/custom_button_login" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/submit" />
+                </RelativeLayout>
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="24.0dp" android:text="@string/kami_memerlukan_nomor_induk_mahasiswa_dan_tanggal_lahir_anda_untuk_memverifikasi_data_diri_anda_selanjutnya_anda_akan_menerima_kode_otp_yang_akan_terinput_secara_otomatis_di_halaman_verifikasi_otp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

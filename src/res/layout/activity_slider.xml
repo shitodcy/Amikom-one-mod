@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_slider" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.smarteist.autoimageslider.SliderView android:id="@id/imgSliderPetunjuk" android:layout_width="match_parent" android:layout_height="match_parent" app:sliderAnimationDuration="600" app:sliderIndicatorAnimationDuration="600" app:sliderIndicatorGravity="center|bottom" app:sliderIndicatorMargin="15.0dp" app:sliderIndicatorOrientation="horizontal" app:sliderIndicatorPadding="3.0dp" app:sliderIndicatorRadius="2.0dp" app:sliderIndicatorSelectedColor="@color/ungu_slider" app:sliderIndicatorUnselectedColor="@color/gray_selector" app:sliderScrollTimeInSec="1" app:sliderStartAutoCycle="false" />
+    </LinearLayout>
+</RelativeLayout>

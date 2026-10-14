@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/swipePresensi" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layoutScan" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:elevation="0.0dp" app:elevation="0.0dp">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:navigationIcon="@drawable/ic_arrow_back_white_24dp" app:title="Scan QR Code" app:titleTextColor="@android:color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinatorQR" android:paddingBottom="240.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <TextView android:id="@id/tv_location_disable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LOKASI DI MATIKAN TOLONG HIDUPKKAN" android:layout_centerInParent="true" />
+</RelativeLayout>

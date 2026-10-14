@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/layout_main" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/frameMain" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toTopOf="@id/bottomAppBar" app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.bottomappbar.BottomAppBar android:id="@id/bottomAppBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:fabCradleMargin="0.0dp" app:fabCradleRoundedCornerRadius="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:paddingBottomSystemWindowInsets="false">
+            <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/bottom_nav" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="16.0dp" app:itemIconTint="@color/bottom_nav_color" app:itemTextColor="@color/bottom_nav_color" app:labelVisibilityMode="labeled" app:paddingBottomSystemWindowInsets="false" />
+        </com.google.android.material.bottomappbar.BottomAppBar>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/fab_presence" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_scan" android:contentDescription="@string/tombol_untuk_melakukan_presensi" app:backgroundTint="@color/colorPrimary" app:borderWidth="0.0dp" app:fabCustomSize="65.0dp" app:fabSize="normal" app:layout_anchor="@id/bottomAppBar" app:layout_anchorGravity="center_horizontal" app:maxImageSize="35.0dp" app:tint="@color/white" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

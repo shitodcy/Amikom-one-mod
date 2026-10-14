@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layout_slider_petunjuk" android:background="@color/putih" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutAtas" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/imgItemPetunjuk" android:layout_width="200.0dp" android:layout_height="200.0dp" android:layout_marginBottom="45.0dp" android:src="@null" />
+        <TextView android:textSize="@dimen/text_judul" android:textColor="@color/hitam" android:gravity="center" android:id="@id/tvTitleItemPetunjuk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="@string/tidak_melakukan_kecurangan" android:fontFamily="@font/poppins_medium" />
+        <TextView android:textSize="@dimen/item" android:gravity="center" android:id="@id/tvDeskripsiItemPetunjuk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="@string/dilarang_melakukan_tindakan_kecurangan_seperti_hacking_cracking_menyebarkan_virus_secara_sengaja_dan_lain_lain" android:fontFamily="@font/poppins_regular" />
+    </LinearLayout>
+    <Button android:textColor="@color/putih" android:id="@id/btItemPetunjuk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/mulai" android:layout_below="@id/layoutAtas" android:layout_centerInParent="true" android:textAllCaps="false" android:fontFamily="@font/poppins_medium" app:backgroundTint="@color/ungu_slider" app:cornerRadius="10.0dp" />
+</RelativeLayout>

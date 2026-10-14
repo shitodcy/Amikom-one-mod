@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="21.0dp" android:width="21.0dp" android:viewportWidth="21.0" android:viewportHeight="21.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/ungu_profile" android:pathData="M17.5,3.5H3.5C2.537,3.5 1.759,4.287 1.759,5.25L1.75,15.75C1.75,16.712 2.537,17.5 3.5,17.5H17.5C18.462,17.5 19.25,16.712 19.25,15.75V5.25C19.25,4.287 18.462,3.5 17.5,3.5ZM17.5,7L10.5,11.375L3.5,7V5.25L10.5,9.625L17.5,5.25V7Z" />
+</vector>

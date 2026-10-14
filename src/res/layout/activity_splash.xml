@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_splash" android:background="@color/putih" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="50.0sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@id/tv_amikom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_1_splash" />
+        <com.wang.avi.AVLoadingIndicatorView android:id="@id/av_loading" android:layout_width="50.0dp" android:layout_height="50.0dp" app:indicatorColor="@color/orange_material" app:indicatorName="BallClipRotatePulseIndicator" />
+        <TextView android:textSize="50.0sp" android:textStyle="bold" android:textColor="@color/orange_material" android:id="@id/tv_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_2_splash" />
+    </LinearLayout>
+    <ImageView android:id="@id/img_amikom" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginTop="@dimen/margin_20" android:src="@null" android:layout_above="@id/layoutcopyright" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layoutcopyright" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:src="@drawable/ic_copyright_black_24dp" />
+        <TextView android:textColor="@color/abu_abu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/universitas_amikom_yogyakarta" />
+    </LinearLayout>
+</RelativeLayout>

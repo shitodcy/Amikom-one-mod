@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_gravity="center" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/card_dialog_spinner_khs" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorPrimary" app:cardCornerRadius="10.0dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+                <TextView android:textColor="@color/putih" android:layout_width="100.0dp" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="@string/item_pilih_tahun_spinner" />
+                <Spinner android:id="@id/spTahun" android:background="@color/putih" android:layout_width="120.0dp" android:layout_height="25.0dp" android:layout_margin="10.0dp" style="@style/Spinner" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+                <TextView android:textColor="@color/putih" android:layout_width="100.0dp" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="@string/item_pilih_semester_spinner" />
+                <Spinner android:id="@id/spSemester" android:background="@color/putih" android:layout_width="120.0dp" android:layout_height="25.0dp" android:layout_margin="10.0dp" style="@style/Spinner" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/layout_submit_spinner_khs" android:background="@drawable/custom_button_submit" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_margin="10.0dp">
+                <Button android:textColor="@color/ungu_material" android:id="@id/btSubmitSpinner" android:layout_width="match_parent" android:layout_height="40.0dp" android:text="@string/submit" android:layout_centerInParent="true" android:textAllCaps="false" android:backgroundTint="@color/color_white" />
+                <ProgressBar android:id="@id/progressbar_spinner_semester_tahun" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:indeterminateTint="@color/colorPrimary" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.core.widget.NestedScrollView>

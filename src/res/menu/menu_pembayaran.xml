@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_money_24" android:id="@id/menu_biaya" android:title="@string/biaya" />
+    <item android:icon="@drawable/ic_bill_24" android:id="@id/menu_tagihan" android:title="@string/tagihan" />
+    <item android:icon="@drawable/ic_history_24" android:id="@id/menu_history" android:title="@string/riwayat" />
+    <item android:icon="@drawable/ic_payments" android:id="@id/menu_pembayaran" android:title="@string/tiket_pembayaran" />
+</menu>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+    <style name="dialog_blue_button" parent="@android:style/Widget.Button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:paddingLeft">21.0dp</item>
+        <item name="android:paddingTop">5.0dp</item>
+        <item name="android:paddingRight">21.0dp</item>
+        <item name="android:paddingBottom">5.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48.0dp</item>
+        <item name="android:layout_margin">8.0dp</item>
+    </style>
+</resources>

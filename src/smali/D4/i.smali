@@ -1,0 +1,6 @@
+.class public interface abstract LD4/i;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lp4/c;

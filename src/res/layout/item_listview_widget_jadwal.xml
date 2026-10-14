@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/widgetItemContainer" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="50.0dp" android:layout_height="match_parent" android:layout_margin="10.0dp">
+        <TextView android:textSize="10.0sp" android:textColor="@color/hitam" android:gravity="center" android:id="@id/tvJamWidget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_jam" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10.0dp">
+        <TextView android:textSize="@dimen/subjudul" android:textColor="@color/hitam" android:id="@id/tvMatkulWidget" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/item_matkul" />
+        <TextView android:textSize="@dimen/subjudul" android:textColor="@color/abu_abu" android:id="@id/tvDosenWidget" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/item_dosen" />
+        <TextView android:textSize="@dimen/subjudul" android:textColor="@color/abu_abu" android:id="@id/tvRuanganWidget" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/item_ruangan" />
+    </LinearLayout>
+</LinearLayout>

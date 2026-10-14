@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layoutTagihan" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipePembayaran" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutTiketPembayaran" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textColor="@color/color_white" android:gravity="center" android:background="@color/merah_material" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tiket_pembayaran_ini_hanya_bisa_digunakan" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rvPembayaran" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8.0dp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressPembayaran" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" app:elevation="2.0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/fabAddTicket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp" android:contentDescription="@string/tombol_untuk_menambahkan_tiket_pembayaran" android:layout_marginEnd="24.0dp" app:backgroundTint="@color/colorPrimary" app:borderWidth="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:maxImageSize="40.0dp" app:srcCompat="@drawable/ic_add" app:tint="@color/white" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
