@@ -4,7 +4,10 @@
 [![Tools](https://img.shields.io/badge/Decompiled%20with-Apktool-blue.svg)](https://apktool.org/)
 [![License](https://img.shields.io/badge/License-Educational%20&%20Research-orange.svg)](LICENSE)
 
+> *"This mod was created out of frustration with an app that was riddled with bugs and featured elements that appeared complex yet served no useful purpose."*
+
 Repositori ini berisi source code hasil dekompilasi (Smali & Android Resources) dari aplikasi **Amikom One** (`com.ic.projectabsensi`), lengkap dengan serangkaian perbaikan bug (*patch*), bypass batasan tertentu untuk keperluan riset, serta analisis keamanan (*security audit*).
+
 
 ---
 
